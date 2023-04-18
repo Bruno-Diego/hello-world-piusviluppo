@@ -1,6 +1,8 @@
-![img](https://*)
+![img](https://)
 
-Welcome visitor,
+per accedere al sito live [clicca qui](https://bruno-diego.github.io/hello-world-piusviluppo/)
+
+Benvenuto visitatore,
 
 # hello-world
 
