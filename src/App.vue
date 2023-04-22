@@ -43,19 +43,27 @@
         </template>
         <v-list>
           <v-list-item>
-            <v-list-item-title>Option {{ n }}</v-list-item-title>
+            <v-list-item-title>
+              <v-btn class="d-flex d-md-none" href="/" text>
+                Tasks
+              </v-btn>
+            </v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title>
+              <v-btn class="d-flex d-md-none" href="/" text>
+                Completed
+              </v-btn>
+            </v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title>
+              <v-btn class="d-flex d-md-none" href="/" text>
+                Proggetto 2 (API)
+              </v-btn>
+            </v-list-item-title>
           </v-list-item>
         </v-list>
-        <v-btn class="d-flex d-md-none" href="/" text>
-        Tasks
-        </v-btn>
-        <v-btn class="d-flex d-md-none" href="/" text>
-          Completed
-        </v-btn>
-        <v-btn class="d-flex d-md-none" href="/" text>
-          Proggetto 2 (API)
-        </v-btn>
-        
       </v-menu>
     </v-app-bar>
 

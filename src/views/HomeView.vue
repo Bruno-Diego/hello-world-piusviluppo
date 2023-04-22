@@ -1,17 +1,20 @@
 <template>
-  <!-- <hello-world /> -->
+<div>
+  <AddTask v-on:add-task="addTask" />
   <TodoList v-bind:todos="todos" v-on:archiviare="archiviareTodo" />
+</div>
 </template>
 
 <script>
   // import HelloWorld from '../components/HelloWorld'
   import TodoList from '../components/Todo'
+  import AddTask from '../components/AddTask'
   export default {
     name: 'ToDoList',
 
     components: {
-      // HelloWorld,
       TodoList,
+      AddTask,
     },
     data: () => ({
       todos: [
@@ -38,6 +41,9 @@
     methods: {
       archiviareTodo(id) {
         this.todos = this.todos.filter(todo => todo.id !== id.id);
+      },
+      addTask(nuovaTask) {
+        this.todos = [...this.todos, nuovaTask]
       }
     }
   }
