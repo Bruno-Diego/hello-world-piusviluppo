@@ -1,7 +1,5 @@
 <template>
-  
-  <v-app>
-    <!-- <v-app-bar
+  <v-app-bar
       app
       color="secondary"
       dark
@@ -65,22 +63,12 @@
           </v-list-item>
         </v-list>
       </v-menu>
-    </v-app-bar> -->
-    <NavBar />
-    <v-main>
-      <router-view />
-    </v-main>
-  </v-app>
+    </v-app-bar>
 </template>
 
 <script>
-import NavBar from './components/NavBar'
-
 export default {
   name: 'App',
-  components: {
-      NavBar
-  },
   data: () => ({
     //
   }),

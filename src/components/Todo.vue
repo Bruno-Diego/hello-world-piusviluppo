@@ -10,9 +10,6 @@
                         </v-list-item>
                     </v-list-item-group>
                 </v-card>
-                <!-- <div v-bind:key="todo.id" v-for="todo in todos">
-                    <TodoItem v-bind:todo="todo" />
-                </div> -->
             </v-col>
         </v-row>
     </v-container>

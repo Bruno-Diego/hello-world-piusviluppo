@@ -9,6 +9,7 @@
 
 <script>
 import * as uuid from 'uuid';
+
 export default {
     name: "AddTask",
     data() {
