@@ -28,9 +28,11 @@
                       </form>
                      </v-card-text>
                   </v-card>
-                
                </v-flex>
             </v-layout>
+            <v-row class="my-8">
+               <p class="mx-auto">Messaggio per gli utenti: Questo sito web è stato creato per scopi didattici e come test di applicazione per PiuSviluppo.</p>
+            </v-row>   
          </v-container>
       </v-main>
    </v-app>

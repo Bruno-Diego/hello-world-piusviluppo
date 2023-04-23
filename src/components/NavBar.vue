@@ -4,7 +4,7 @@
       color="secondary"
       dark
     >
-      <v-app-bar-nav-icon>
+      <v-app-bar-nav-icon disabled>
         <v-icon x-large>
           mdi-checkbox-marked-circle-auto-outline
         </v-icon>
@@ -15,9 +15,9 @@
 
 
       <v-btn class="d-none d-md-flex" href="/" text>
-        Esci
+        Home
       </v-btn>
-      <v-btn class="d-none d-md-flex" href="/" text>
+      <v-btn class="d-none d-md-flex" href="/api" text>
         Proggetto 2 (API)
       </v-btn>
 
@@ -40,7 +40,7 @@
           <v-list-item>
             <v-list-item-title>
               <v-btn class="d-flex d-md-none" href="/" text>
-                Tasks
+                Home
               </v-btn>
             </v-list-item-title>
           </v-list-item>
