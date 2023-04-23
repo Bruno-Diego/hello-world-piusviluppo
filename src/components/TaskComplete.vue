@@ -1,6 +1,6 @@
 <template>
-<v-list-item-content v-bind:class="{'d-none is-complete':todo.completed}">
-    <v-row class="align-center" >
+<v-list-item-content>
+    <v-row class="align-center">
         <v-col cols="2"> 
             <v-row class="text-center mx-3">
                 <v-checkbox
@@ -54,8 +54,5 @@
 <style scoped>
 .is-complete {
     text-decoration: line-through;
-}
-.v-item-item:has(.is-complete) {
-    display: none;
 }
 </style>

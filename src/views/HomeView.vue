@@ -1,8 +1,10 @@
 <template>
   <div>
+    <v-row class="my-auto">
+      <h1 class="mx-auto">Welcome to your to-do list,{{ nomeutenti ? ' ' + nomeutenti : '' }}!</h1>
+    </v-row>
     <AddTask v-on:add-task="addTask" />
     <TodoList v-bind:todos="todos" v-on:archiviare="archiviareTodo" />
-    <div>a</div>
   </div>
 </template>
 
@@ -11,7 +13,7 @@
   import AddTask from '../components/AddTask'
 
   export default {
-    name: 'ToDoList',
+    name: 'HomeView',
 
     components: {
       TodoList,
@@ -36,10 +38,15 @@
         },
       ]
     }),
+    created() {
+      this.nomeutenti = this.$route.params.nomeutenti
+      if (!this.nomeutenti) {
+        this.$router.push({ name: 'login' })
+      } 
+    },
     methods: {
       archiviareTodo(id) {
         this.todos = this.todos.filter(todo => todo.id !== id.id);
-        console.log(this.$route.params)
       },
       addTask(nuovaTask) {
         this.todos = [...this.todos, nuovaTask]

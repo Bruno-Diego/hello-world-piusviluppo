@@ -15,10 +15,7 @@
 
 
       <v-btn class="d-none d-md-flex" href="/" text>
-        Tasks
-      </v-btn>
-      <v-btn class="d-none d-md-flex" href="/" text>
-        Completed
+        Esci
       </v-btn>
       <v-btn class="d-none d-md-flex" href="/" text>
         Proggetto 2 (API)
@@ -44,13 +41,6 @@
             <v-list-item-title>
               <v-btn class="d-flex d-md-none" href="/" text>
                 Tasks
-              </v-btn>
-            </v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title>
-              <v-btn class="d-flex d-md-none" href="/" text>
-                Completed
               </v-btn>
             </v-list-item-title>
           </v-list-item>
